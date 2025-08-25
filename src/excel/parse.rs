@@ -2,7 +2,7 @@ use crate::stock_excel::StockExcel;
 use calamine::{Data, Range};
 use tracing::debug;
 
-pub fn convert_stocks(range: &Range<Data>) -> Result<Vec<StockExcel>, calamine::Error> {
+pub fn convert_stocks(range: &Range<Data>) -> Result<Vec<StockExcel>, anyhow::Error> {
     let mut stocks = Vec::new();
 
     for rows in range.rows() {

@@ -1,12 +1,12 @@
 use calamine::{Reader, open_workbook_auto};
 use std::path::PathBuf;
 use stock::config::Config;
+use stock::dir::traverse_dir;
 use stock::log::set_tracing_subscriber;
 use stock::parse::convert_stocks;
-use stock::traverse_dir;
 use tracing::{debug, info};
 
-fn main() -> std::io::Result<()> {
+fn main() -> Result<(), anyhow::Error> {
     // 读取 stock-config.yml 的配置文件，读取不到直接退出程序
     let filename = Config::read_default_config().unwrap();
     let config = Config::load(filename).unwrap();

@@ -1,2 +1,3 @@
 ### Fixtures
-Fixture data for unit tests & integration tests.
+单元测试和集成测试的测试用例数据；
+由于股票信息存在敏感数据，所以在本人的本地系统中存在excel目录下的股票交易数据的excel文件
