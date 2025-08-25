@@ -1,0 +1,4 @@
+excel:
+  path: /Users/wu_zhijun/works/RustroverProjects/stock/fixtures/excel
+level:
+  log: debug

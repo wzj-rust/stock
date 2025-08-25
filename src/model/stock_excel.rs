@@ -52,3 +52,9 @@ impl StockExcel {
         }
     }
 }
+
+impl Default for StockExcel {
+    fn default() -> Self {
+        Self::new()
+    }
+}
