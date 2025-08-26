@@ -1,6 +1,7 @@
 use std::collections::HashMap;
 use std::fs;
 
+/// 遍历目录下的所有文件
 pub fn traverse_dir(dir_path: &str) -> Result<HashMap<String, String>, anyhow::Error> {
     let mut maps = HashMap::new();
 
