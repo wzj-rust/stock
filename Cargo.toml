@@ -7,10 +7,10 @@ license = "MIT"
 documentation = "https://docs.rs/stock"
 repository = "https://github.com//stock"
 homepage = "https://github.com//stock"
-description = ""
+description = "股票分析系统"
 readme = "README.md"
 categories = ["development-tools"]
-keywords = []
+keywords = ["stock","rust"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
